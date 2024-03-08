@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1>Depot</h1>
+<form th:action="@{/depot/{id}}" method="post">
+    <label>IdCompte:</label><input type="text" name="id"/><br/>
+    <label>Montant:</label> <input type="text" name="montant"/><br/>
+    <input type="submit" value="Faire un depot">
+
+</form>
+</body>
+</html>

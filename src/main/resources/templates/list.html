@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<h1 th:each="lister :${listall}">
+    <h2 th:text="${lister.nom}"></h2>
+    <h2 th:text="${lister.compte}"></h2>
+    <h2 th:text="${lister.password}"></h2>
+    <h2 th:text="${lister.date}"></h2>
+    <a th:href="@{/list/{id}(id=${lister.id})}">Details</a>
+    <hr>
+</h1>
+</body>
+</html>
